@@ -1,6 +1,10 @@
 # Nmap
 
+Basic Enum
+
+```text
 nmap -sC -sV $TARGET -oN initscan
+```
 
 Find Nmap scripts
 
