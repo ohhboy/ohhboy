@@ -2,21 +2,31 @@
 
 ## Identify the Hash
 
-**HashID** Automated hash recognition tools \(Unreliable many formats\) [Hashid project](https://pypi.org/project/hashID/)
+### **HashID** 
 
-**Hash Identifier** hash-identifier
+Automated hash recognition tools \(Unreliable many formats\) [Hashid project](https://pypi.org/project/hashID/)
 
-**Online Hash Identifiers** [Hash Identifier](https://hashes.com/en/tools/hash_identifier)
+### **Hash Identifier** 
+
+```text
+hash-identifier
+```
+
+### **Online Hash Identifiers** 
+
+[Hash Identifier](https://hashes.com/en/tools/hash_identifier)
 
 ## Crack the Hash
 
-**Find My Hash**
+### **Find My Hash**
 
 ```text
 findmyhash MD5 -h HASH_HERE
 ```
 
-**John The Ripper** Basic
+### **John The Ripper** 
+
+#### Basic
 
 ```text
 john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt
@@ -46,7 +56,7 @@ john --wordlist=/app/payloads/rockyou.txt --format=sha512crypt unshadowed.txt
 
 /app/payloads/rockyou.txt
 
-Custom Rule
+#### Custom Rule
 
 Custom rules are stored in `/etc/john/john.conf` or `/opt/john/john.conf`
 
@@ -54,7 +64,7 @@ Custom rules are stored in `/etc/john/john.conf` or `/opt/john/john.conf`
 john --wordlist=path_to_wordlist --rule=rule_name path_to_hash_file
 ```
 
-Zip2John
+#### Zip2John
 
 ```text
 Convert Zip to Hash File
@@ -68,7 +78,7 @@ john --wordlist=app/payloads/rockyou.txt zip\_hash.txt
 
 _options is optional most of the times_
 
-SSH2John
+#### SSH2John
 
 ```text
 Convert SSH to Hash File
