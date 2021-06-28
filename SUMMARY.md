@@ -10,4 +10,5 @@
 * [SSL Pinning Bypass](ssl-pinning-bypass.md)
 * [Windows Privilege Escalation Course](windows-privilege-escalation-course.md)
 * [Practical Ethical Hacking](practical-ethical-hacking.md)
+* [Best References](best-references.md)
 
