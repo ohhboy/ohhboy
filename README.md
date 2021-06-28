@@ -4,7 +4,5 @@ description: Personal Notes
 
 # OhhBoy Notes
 
-Its my personal notes
-
-![](.gitbook/assets/pubg-logo.jpeg)
+![](.gitbook/assets/pubg-logo%20%281%29.jpeg)
 
