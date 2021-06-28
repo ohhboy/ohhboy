@@ -29,7 +29,7 @@ sudo docker commit CONTAINER_ID NEW_IMAGE_NAME
 Mount the Directory
 
 ```text
-docker run -d -it --name mounttest --mount type=bind,source="/home/ohhboy/",target=/app jasonchaffee/kali-linux
+docker run -d -it --mount type=bind,source="/home/ohhboy/",target=/app jasonchaffee/kali-linux
 ```
 
 Run kali

