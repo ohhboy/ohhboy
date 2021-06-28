@@ -2,4 +2,6 @@
 
 * [OhhBoy Notes](README.md)
 * [Docker](docker.md)
+* [FFUF](ffuf.md)
+* [Hashing Crypto](hashing-crypto.md)
 
