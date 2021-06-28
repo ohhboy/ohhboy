@@ -1,11 +1,6 @@
 # Table of contents
 
 * [OhhBoy Notes](README.md)
-
-## OhhBoy Notes
-
----
-
 * [Oneliners](oneliners.md)
 * [Docker](docker.md)
 * [FFUF](ffuf.md)
