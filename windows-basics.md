@@ -1,6 +1,6 @@
 # Windows Basics
 
-**Permissions**
+### **Permissions**
 
 Permissions can be applied to,
 
@@ -31,7 +31,7 @@ Important letters
 * AD - append data \(add subdirectories\)  
 * WD - write data and add files
 
- **Active Directory**
+###  **Active Directory**
 
 * On-Premise Active Directory \(AD\)
 * Azure Active Directory \(AAD\)
@@ -57,11 +57,11 @@ Authentication on Azure Active Directory
 * Command-line tools
 * Registry Editor \(Regedit\)
 
-**Active Directory**
+### **Windows Server AD vs Azure AD**
 
 ![](.gitbook/assets/2.png)
 
-**PowerView Too** Tool is used to enumerate AD.
+### **PowerView Tool** Tool is used to enumerate AD.
 
 ```text
 powershell -ep bypass
