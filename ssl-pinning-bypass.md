@@ -2,7 +2,7 @@
 
 ## SSL Pinning Bypass
 
-### Steps :
+### Steps
 
 1. Go to geanymotions tools/ folder. \( /tools/mobile/genymotion/tools\)  
 2. Use adb server from there.  
@@ -60,7 +60,7 @@ com.figmd.nbir
 
 /tools/mobile/genymotion/tools
 
-**References**
+### **References**
 
 [https://arben.sh/bugbounty/Configuring-Frida-with-Burp-and-GenyMotion-to-bypass-SSL-Pinning/](https://arben.sh/bugbounty/Configuring-Frida-with-Burp-and-GenyMotion-to-bypass-SSL-Pinning/)  
 [https://codeshare.frida.re/](https://codeshare.frida.re/)  
@@ -86,14 +86,14 @@ frida -U -f com.figmd.nbir -l frida.js –no-pause
 
 adb shell "/data/local/tmp/frida-server &"
 
-**Mobile Reverse engineering**
+### **Mobile Reverse engineering**
 
 [https://github.com/linkedin/qark](https://github.com/linkedin/qark)  
 [https://www.ragingrock.com/AndroidAppRE/index.html](https://www.ragingrock.com/AndroidAppRE/index.html)  
 [https://github.com/skylot/jadx](https://github.com/skylot/jadx)  
 [https://ibotpeaches.github.io/Apktool/](https://ibotpeaches.github.io/Apktool/)
 
-**Checklist**
+### **Checklist**
 
 [https://github.com/b-mueller/android\_app\_security\_checklist](https://github.com/b-mueller/android_app_security_checklist)
 
