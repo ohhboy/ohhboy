@@ -99,7 +99,7 @@ Resources: [https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-
 
 ![](.gitbook/assets/1.png)
 
-### Post Compromise Enumeration\*\*
+### Post Compromise Enumeration
 
 1. [Powerview](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)
 
