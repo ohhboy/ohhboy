@@ -2,7 +2,7 @@
 
 ## Subnetting
 
-[IP Adress Guild site](https://www.ipaddressguide.com/)
+[IP Address Guide site](https://www.ipaddressguide.com/)
 
 [Subnetting sheet](https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view?usp=sharing)
 
