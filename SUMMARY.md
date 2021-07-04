@@ -5,6 +5,7 @@
 * [Hashing Crypto](hashing-crypto.md)
 * [SSL Pinning Bypass](ssl-pinning-bypass.md)
 * [Windows Basics](windows-basics.md)
+* [File Transfers](file-transfers.md)
 
 ## Tools
 
@@ -19,7 +20,5 @@
 
 ## References
 
----
-
-* [Best References](best-references.md)
+* [Best References](references/best-references.md)
 
