@@ -3,7 +3,7 @@
 ### Kali Docker
 
 ```text
-docker run --tty --interactive kalilinux/kali-rolling /bin/bash
+docker run --tty --interactive --mount type=bind,source="/home/ohhboy/",target=/app kalilinux/kali-rolling /bin/bash
 ```
 
 
