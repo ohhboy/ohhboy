@@ -1,5 +1,13 @@
 # Oneliners
 
+### Kali Docker
+
+```text
+docker run --tty --interactive kalilinux/kali-rolling /bin/bash
+```
+
+
+
 ### Simple Python Server
 
 ```text
