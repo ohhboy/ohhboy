@@ -16,5 +16,5 @@ openssl passwd -1 -salt mysalt Raviraj@1234
 mkpasswd -m sha-512 newpasswordhere
 ```
 
-scp file.txt user@10.10.117.88:/home/user
+
 
