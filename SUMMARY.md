@@ -6,6 +6,7 @@
 * [SSL Pinning Bypass](ssl-pinning-bypass.md)
 * [Windows Basics](windows-basics.md)
 * [File Transfers](file-transfers.md)
+* [Generate](generate.md)
 
 ## Tools
 
