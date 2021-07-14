@@ -14,7 +14,7 @@
 
 #### LLMNR Poisoning
 
-![](../.gitbook/assets/3%20%281%29%20%281%29%20%281%29.png)
+![](../.gitbook/assets/3%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
 Tool: [Responder](https://github.com/SpiderLabs/Responder) Capture the NTLMv2 hases with Responder on eth0.
 

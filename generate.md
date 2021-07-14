@@ -16,6 +16,5 @@ openssl passwd -1 -salt mysalt Raviraj@1234
 mkpasswd -m sha-512 newpasswordhere
 ```
 
-### Third way
 
 
